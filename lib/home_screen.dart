@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     fixedCostTotal = 0;
     entertainmentTotal = 0;
     _now = DateTime.now();
-    oneWeek = '￥' + '1週間以内の後払いはありません';
+    oneWeek = '￥' + '1週間以内の後払いはありませ';
     oneWeekDate = '';
     // nowResult = DateTime(_now.year, _now.month);
     // rresult = DateTime(_now.year, _now.month + 1, 1).add(Duration(days: -1));

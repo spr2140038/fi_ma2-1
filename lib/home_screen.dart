@@ -283,6 +283,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             Container(
               child: Row(
                 children: [
+                  SizedBox(width: 25,),
                   Text('合計金額:', style: TextStyle(fontSize: 30),),
                   SizedBox(width: 15,),
                   Text(total.toString(),style: TextStyle(fontSize: 35, decoration: TextDecoration.underline),),
@@ -291,58 +292,64 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             ),
             SizedBox(height: 10,),
             Container(
-              width: double.infinity,
-              height: 30,
-              // color: Colors.yellowAccent,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text('食費', style: TextStyle(fontSize: 25),),
-                  SizedBox(width: 15,),
-                  Text(foodTotal.toString(), style: TextStyle(fontSize: 25),)
-                ],
-              ),
-            ),
-            SizedBox(height: 10,),
-            Container(
-              width: double.infinity,
-              height: 30,
-              // color: Colors.yellowAccent,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text('交通費', style: TextStyle(fontSize: 25),),
-                  SizedBox(width: 15,),
-                  Text(trafficTotal.toString(), style: TextStyle(fontSize: 25),)
-                ],
-              ),
-            ),
-            SizedBox(height: 10,),
-            Container(
-              width: double.infinity,
-              height: 30,
-              // color: Colors.yellowAccent,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text('固定費', style: TextStyle(fontSize: 25),),
-                  SizedBox(width: 15,),
-                  Text(fixedCostTotal.toString(), style: TextStyle(fontSize: 25),)
-                ],
-              ),
-            ),
-            SizedBox(height: 10,),
-            Container(
-              width: double.infinity,
-              height: 30,
-              // color: Colors.yellowAccent,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text('交際費', style: TextStyle(fontSize: 25),),
-                  SizedBox(width: 15,),
-                  Text(entertainmentTotal.toString(), style: TextStyle(fontSize: 25),)
-                ],
+              height: 160,
+              width: 355,
+              //color: Colors.grey,
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Container(
+                      width: 150,
+                      height: 30,
+                      // color: Colors.yellowAccent,
+                      child: Row(
+                        children: [
+                          Text('食費', style: TextStyle(fontSize: 25),),
+                          SizedBox(width: 40,),
+                          Text(foodTotal.toString(), style: TextStyle(fontSize: 25),)
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 150,
+                      height: 30,
+                      //color: Colors.yellowAccent,
+                      child: Row(
+                        children: [
+                          Text('交通費', style: TextStyle(fontSize: 25),),
+                          SizedBox(width: 15,),
+                          Text(trafficTotal.toString(), style: TextStyle(fontSize: 25),)
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 150,
+                      height: 30,
+                      // color: Colors.yellowAccent,
+                      child: Row(
+                        children: [
+                          Text('固定費', style: TextStyle(fontSize: 25),),
+                          SizedBox(width: 15,),
+                          Text(fixedCostTotal.toString(), style: TextStyle(fontSize: 25),)
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 150,
+                      height: 30,
+                      // color: Colors.yellowAccent,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Text('交際費', style: TextStyle(fontSize: 25),),
+                          SizedBox(width: 15,),
+                          Text(entertainmentTotal.toString(), style: TextStyle(fontSize: 25),)
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],

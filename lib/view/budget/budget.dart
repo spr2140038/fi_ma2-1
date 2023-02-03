@@ -105,7 +105,7 @@ class _Budget extends State<Budget> {
       body: Center(
         child: Column(
           children: <Widget>[
-            SizedBox(height: 60,),
+            SizedBox(height: 20,),
             Container(
               width: double.infinity,
               height: 80,
@@ -149,7 +149,7 @@ class _Budget extends State<Budget> {
                 ],
               ),
             ),
-            SizedBox(height: 40,),
+            SizedBox(height: 20,),
             Container(
               width: double.infinity,
               height: 40,
